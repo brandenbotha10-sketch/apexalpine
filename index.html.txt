@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexAlpine | Luxury Expeditions</title>
+    <!-- Premium Tailwind CSS Framework Engine Injection -->
+    <script src="https://tailwindcss.com"></script>
+</head>
+<body class="bg-[#090b0e] text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-black">
+
+    <!-- NAVIGATION MENU BAR HEADER LAYER -->
+    <nav class="w-full fixed top-0 z-50 bg-[#090b0e]/80 backdrop-blur-md border-b border-slate-900 px-6 py-4 flex justify-between items-center">
+        <div class="text-xl font-black tracking-widest text-amber-500 uppercase">ApexAlpine</div>
+        <div class="hidden md:flex space-x-8 text-xs font-bold tracking-widest uppercase text-slate-400">
+            <a href="#hero" class="hover:text-amber-500 transition">Overview</a>
+            <a href="#tours" class="hover:text-amber-500 transition">Expeditions</a>
+            <a href="#stats" class="hover:text-amber-500 transition">Mountain Metrics</a>
+            <a href="#book" class="hover:text-amber-500 transition">Booking Pipeline</a>
+        </div>
+        <a href="#book" class="bg-amber-500 hover:bg-amber-600 text-black font-extrabold px-5 py-2 rounded-lg text-xs tracking-widest uppercase transition">Reserve Spot</a>
+    </nav>
+
+    <!-- SECTION 1: HERO CINEMATIC HEADER BANNER -->
+    <section id="hero" class="relative min-h-screen flex flex-col justify-center items-start px-6 md:px-20 bg-cover bg-center pt-20" style="background-image: linear-gradient(rgba(9,11,14,0.4), rgba(9,11,14,1)), url('https://unsplash.com');">
+        <div class="max-w-4xl space-y-6">
+            <span class="inline-block text-[10px] font-black tracking-widest text-amber-500 uppercase bg-amber-500/10 px-3 py-1 rounded border border-amber-500/20">WINTER PROTOCOLS ENGAGED</span>
+            <h1 class="text-5xl md:text-8xl font-black tracking-tight uppercase leading-none text-white">CONQUER<br><span class="text-amber-500">YOUR PEAK</span></h1>
+            <p class="text-sm md:text-base text-slate-400 max-w-xl font-light leading-relaxed">
+                Untouched powder fields, remote heli-ski vertical matrices, and world-class alpine experts guiding your path across the raw wilderness.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="#tours" class="bg-white hover:bg-slate-200 text-black font-extrabold px-6 py-3.5 text-xs tracking-widest uppercase rounded transition">Explore Lineup</a>
+                <a href="#book" class="border border-slate-700 hover:border-white bg-slate-900/50 text-white font-extrabold px-6 py-3.5 text-xs tracking-widest uppercase rounded transition">Configure Cost</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: EXPEDITION PRODUCT COMPONENT MATRIX -->
+    <section id="tours" class="max-w-7xl mx-auto px-6 py-24 space-y-12">
+        <div class="border-l-2 border-amber-500 pl-4">
+            <span class="text-xs font-bold tracking-widest text-amber-500 uppercase block">CURATED EXPERIENCES</span>
+            <h2 class="text-3xl md:text-4xl font-black text-white uppercase tracking-tight">PREMIER ADVENTURE TIERS</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Product Item One -->
+            <div class="bg-[#11141a] border border-slate-800 rounded-xl overflow-hidden flex flex-col justify-between hover:border-slate-700 transition">
+                <div class="h-56 bg-cover bg-center" style="background-image: url('https://unsplash.com');"></div>
+                <div class="p-6 space-y-4 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-white uppercase tracking-tight">Backcountry Chute Guide</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed mt-1">Leave resort borders completely behind. Precision tracking lines mapping out technical unmarked terrain.</p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/60 flex justify-between items-baseline">
+                        <span class="text-[10px] uppercase font-bold text-slate-500 tracking-wider">Base Package</span>
+                        <span class="text-lg font-mono font-bold text-amber-500">$1,250 <span class="text-[10px] text-slate-400 font-sans">/ Head</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Item Two -->
+            <div class="bg-[#11141a] border border-slate-800 rounded-xl overflow-hidden flex flex-col justify-between hover:border-slate-700 transition">
+                <div class="h-56 bg-cover bg-center" style="background-image: url('https://unsplash.com');"></div>
+                <div class="p-6 space-y-4 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-white uppercase tracking-tight">Heliskiing Ridge Circuit</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed mt-1">Absolute wilderness isolation. Board a high-performance aircraft vector to unlock pristine mountain access.</p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/60 flex justify-between items-baseline">
+                        <span class="text-[10px] uppercase font-bold text-slate-500 tracking-wider">Base Package</span>
+                        <span class="text-lg font-mono font-bold text-amber-500">$3,400 <span class="text-[10px] text-slate-400 font-sans">/ Head</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Item Three -->
+            <div class="bg-[#11141a] border border-slate-800 rounded-xl overflow-hidden flex flex-col justify-between hover:border-slate-700 transition">
+                <div class="h-56 bg-cover bg-center" style="background-image: url('https://unsplash.com');"></div>
+                <div class="p-6 space-y-4 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-white uppercase tracking-tight">Carving Mastery Core</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed mt-1">Accelerate biomechanical control. Refine technical lines under highly focused field supervisor coaching data.</p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/60 flex justify-between items-baseline">
+                        <span class="text-[10px] uppercase font-bold text-slate-500 tracking-wider">Base Package</span>
+                        <span class="text-lg font-mono font-bold text-amber-500">$950 <span class="text-[10px] text-slate-400 font-sans">/ Head</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: LIVE SYSTEMS DATA STATUS DASHBOARD -->
+    <section id="stats" class="bg-[#0d1015] border-y border-slate-900 py-16">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="text-center space-y-1">
+                <div class="text-slate-500 text-[10px] font-bold tracking-widest uppercase">AIR TEMPERATURE</div>
+                <div class="text-3xl font-bold font-mono text-white">-6°C</div>
+                <div class="text-[10px] text-emerald-400">● Stable Wind Velocity</div>
+            </div>
+            <div class="text-center space-y-1">
+                <div class="text-slate-500 text-[10px] font-bold tracking-widest uppercase">BASE POWDER DEPTH</div>
+                <div class="text-3xl font-bold font-mono text-white">120 cm</div>
+                <div class="text-[10px] text-slate-400">Fresh Crystalline Matrix</div>
+            </div>
+            <div class="text-center space-y-1">
+                <div class="text-slate-500 text-[10px] font-bold tracking-widest uppercase">ACTIVE LIFTS OPEN</div>
+                <div class="text-3xl font-bold font-mono text-white">14 / 16</div>
+                <div class="text-[10px] text-slate-400">Optimal Technical Status</div>
+            </div>
+            <div class="text-center space-y-1">
+                <div class="text-slate-500 text-[10px] font-bold tracking-widest uppercase">AVALANCHE RISK</div>
+                <div class="text-3xl font-bold font-mono text-amber-500">LEVEL 2</div>
+                <div class="text-[10px] text-amber-400/70">Moderate — Gear Mandatory</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: REAL-TIME CALCULATION PIPELINE BOOKING CONTAINER -->
+    <section id="book" class="max-w-5xl mx-auto px-6 py-24">
+        <div class="bg-[#11141a] rounded-2xl border border-slate-800 p-6 md:p-10 shadow-2xl space-y-8">
+            <div class="border-b border-slate-800 pb-6">
+                <span class="text-xs font-bold tracking-widest text-amber-500 uppercase">SYSTEM COMPILATION</span>
+                <h2 class="text-2xl font-black text-white uppercase tracking-tight mt-1">LIVE ADVENTURE BILLING PIPELINE</h2>
+            </div>
+
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-8" onsubmit="event.preventDefault();">
+                <!-- FORM CONTROLS -->
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2">Base Expedition Tier</label>
+                        <select id="basePackage" class="w-full bg-[#181d26] border border-slate-700 rounded-lg p-3 text-white font-medium text-sm focus:outline-none focus:border-amber-500 transition">
+                            <option value="1250">Backcountry Chute Guide — $1,250</option>
+                            <option value="3400">Heliskiing Ridge Circuit — $3,400</option>
+                            <option value="950">Carving Mastery Core — $950</option>
+                        </select>
+                    </div>
+
+                    <div class="space-y-3">
+                        <label class="block text-[10px] font-bold tracking-wider text-slate-400 uppercase">Optional Operational Add-ons</label>
+                        <label class="flex items-center space-x-3 bg-[#181d26] p-3 rounded-lg border border-slate-800 hover:border-slate-700 cursor-pointer transition">
+                            <input type="checkbox" value="450" class="addon-check rounded bg-slate-900 border-slate-700 text-amber-500 focus:ring-0">
+                            <span class="text-xs text-slate-300">Expert UIAGM Guide Support Vector (+$450)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 bg-[#181d26] p-3 rounded-lg border border-slate-800 hover:border-slate-700 cursor-pointer transition">
+                            <input type="checkbox" value="250" class="addon-check rounded bg-slate-900 border-slate-700 text-amber-500 focus:ring-0">
+                            <span class="text-xs text-slate-300">Safety Core Telemetry Pack (Signal Beacon) (+$250)</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label class="block text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-2">Group Scalability Matrix</label>
+                        <select id="groupScale" class="w-full bg-[#181d26] border border-slate-700 rounded-lg p-3 text-white font-medium text-sm focus:outline-none focus:border-amber-500 transition">
+                            <option value="1">1 Athlete (Standard Scaling Metric)</option>
+                            <option value="1.8">2 Athletes (Compounded 10% Group Reduction)</option>
+                            <option value="3.2">4 Person Expedition Team (Compounded 20% Group Reduction)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- LIVE COMPILED INVOICE CARD -->
+                <div class="bg-[#181d26] border border-slate-800 rounded-xl p-6 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <span class="text-[10px] font-black text-amber-500 tracking-widest uppercase block">Live Output Metrics</span>
+                        <div class="flex justify-between text-xs border-b border-slate-800/80 pb-2 text-slate-400">
+                            <span>Base Allocations:</span>
+                            <span id="invoiceBase" class="font-mono text-white font-bold">$0.00</span>
+                        </div>
+                        <div class="flex justify-between text-xs border-b border-slate-800/80 pb-2 text-slate-400">
+                            <span>System Add-ons:</span>
+                            <span id="invoiceAddons" class="font-mono text-white font-bold">$0.00</span>
+                        </div>
+                        <div class="flex justify-between text-xs border-b border-slate-800/80 pb-2 text-slate-400">
+                            <span>Scaling Multiplier:</span>
+                            <span id="invoiceScale" class="font-mono text-white font-bold">x1.0</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-slate-800 mt-6 space-y-4">
+                        <div class="flex justify-between items-baseline">
+                            <span class="text-xs font-bold text-white uppercase tracking-wider">Total Investment:</span>
+                            <span id="invoiceTotal" class="text-4xl font-black font-mono text-amber-500">$0.00</span>
+                        </div>
+                        <button class="w-full bg-amber-500 hover:bg-amber-600 text-black font-extrabold uppercase tracking-widest text-xs py-4 rounded-lg shadow-xl shadow-amber-500/5 transition">Compile Destination Package</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER FRAMEWORK METADATA CONTENT -->
+    <footer class="bg-[#050608] border-t border-slate-900 py-10 text-center text-[10px] text-slate-600 font-semibold tracking-wider uppercase space-y-2">
+        <div class="text-slate-400 text-xs font-black tracking-widest">APEXALPINE EXPEDITIONS LABS</div>
+        <p>©️ 2026 Operations. All production nodes mapped under strict high-altitude wilderness safety matrix.</p>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT AUTOMATED ENGINE -->
+    <script>
+        const baseSelect = document.getElementById('basePackage');
+        const checkboxes = document.querySelectorAll('.addon-check');
+        const groupSelect = document.getElementById('groupScale');
+
+        const invBase = document.getElementById('invoiceBase');
+        const invAddons = document.getElementById('invoiceAddons');
+        const invScale = document.getElementById('invoiceScale');
+        const invTotal = document.getElementById('invoiceTotal');
+
+        function runCalculationPipeline() {
+            if(!baseSelect || !invTotal) return;
+            const baseCost = parseFloat(baseSelect.value);
+            
+            let addonCost = 0;
+            checkboxes.forEach(box => { if (box.checked) { addonCost += parseFloat(box.value); } });
+            
+            const multiplier = parseFloat(groupSelect.value);
+            const absoluteSum = (baseCost + addonCost) * multiplier;
+
+            invBase.textContent = `$${baseCost.toLocaleString()}`;
+            invAddons.textContent = `$${addonCost.toLocaleString()}`;
+            invScale.textContent = `x${multiplier}`;
+            invTotal.textContent = `$${Math.round(absoluteSum).toLocaleString()}`;
+        }
+
+        baseSelect.addEventListener('change', runCalculationPipeline);
+        checkboxes.forEach(box => box.addEventListener('change', runCalculationPipeline));
+        groupSelect.addEventListener('change', runCalculationPipeline);
+        runCalculationPipeline();
+    </script>
+</body>
+</html>
