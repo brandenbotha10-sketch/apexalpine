@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ApexAlpine | Luxury Expeditions</title>
     <!-- Premium Tailwind CSS Framework Engine Injection -->
-    <script src="https://tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#090b0e] text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-black">
 
@@ -21,9 +21,12 @@
         <a href="#book" class="bg-amber-500 hover:bg-amber-600 text-black font-extrabold px-5 py-2 rounded-lg text-xs tracking-widest uppercase transition">Reserve Spot</a>
     </nav>
 
-    <!-- SECTION 1: HERO CINEMATIC HEADER BANNER WITH MAJESTIC MOUNTAINS -->
-    <section id="hero" class="relative min-h-screen flex flex-col justify-center items-start px-6 md:px-20 bg-cover bg-center pt-20" style="background-image: linear-gradient(rgba(9,11,14,0.4), rgba(9,11,14,1)), url('https://unsplash.com');">
-        <div class="max-w-4xl space-y-6">
+    <!-- SECTION 1: HERO CINEMATIC HEADER BANNER -->
+    <section id="hero" class="relative min-h-screen flex flex-col justify-center items-start px-6 md:px-20 pt-24 overflow-hidden">
+        <!-- Direct Image Tag to Guarantee Mountain Background Loads Instantly -->
+        <img src="https://unsplash.com" class="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-lighten z-0" alt="Majestic Alpine Peaks">
+        
+        <div class="max-w-4xl space-y-6 relative z-10">
             <span class="inline-block text-[10px] font-black tracking-widest text-amber-500 uppercase bg-amber-500/10 px-3 py-1 rounded border border-amber-500/20">WINTER PROTOCOLS ENGAGED</span>
             <h1 class="text-5xl md:text-8xl font-black tracking-tight uppercase leading-none text-white">CONQUER<br><span class="text-amber-500">YOUR PEAK</span></h1>
             <p class="text-sm md:text-base text-slate-400 max-w-xl font-light leading-relaxed">
@@ -36,7 +39,7 @@
         </div>
     </section>
 
-    <!-- SECTION 2: EXPEDITION PRODUCT COMPONENT MATRIX -->
+    <!-- SECTION 2: EXPEDITION PRODUCT COMPONENT MATRIX WITH IMAGES & BULLET POINTS -->
     <section id="tours" class="max-w-7xl mx-auto px-6 py-24 space-y-12">
         <div class="border-l-2 border-amber-500 pl-4">
             <span class="text-xs font-bold tracking-widest text-amber-500 uppercase block">CURATED EXPERIENCES</span>
@@ -46,11 +49,20 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Product Item One: SKIER CARVING THROUGH POWDER -->
             <div class="bg-[#11141a] border border-slate-800 rounded-xl overflow-hidden flex flex-col justify-between hover:border-slate-700 transition">
-                <div class="h-56 bg-cover bg-center" style="background-image: url('https://unsplash.com');"></div>
+                <div class="h-56 w-full relative">
+                    <img src="https://unsplash.com" class="w-full h-full object-cover" alt="Skier Carving Powder">
+                </div>
                 <div class="p-6 space-y-4 flex-grow flex flex-col justify-between">
                     <div>
                         <h3 class="text-lg font-bold text-white uppercase tracking-tight">Backcountry Chute Guide</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed mt-1">Leave resort borders completely behind. Precision tracking lines mapping out technical unmarked terrain.</p>
+                        <p class="text-xs text-slate-400 leading-relaxed mt-1 mb-4">Leave resort borders completely behind. Precision tracking lines mapping out technical unmarked terrain.</p>
+                        
+                        <!-- Bullet Points Block -->
+                        <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800/80 pt-4">
+                            <li class="flex items-center"><span class="text-amber-500 mr-2">✓</span> Certified personal UIAGM mountain guide</li>
+                            <li class="flex items-center"><span class="text-amber-500 mr-2">✓</span> Custom off-trail avalanche safety briefing</li>
+                            <li class="flex items-center"><span class="text-amber-500 mr-2">✓</span> Real-time GPS safety tracking systems</li>
+                        </ul>
                     </div>
                     <div class="pt-4 border-t border-slate-800/60 flex justify-between items-baseline">
                         <span class="text-[10px] uppercase font-bold text-slate-500 tracking-wider">Base Package</span>
@@ -59,13 +71,22 @@
                 </div>
             </div>
 
-            <!-- Product Item Two: CHOPPER ON MOUNTAIN RIDGE -->
+            <!-- Product Item Two: HELICOPTER ON MOUNTAIN -->
             <div class="bg-[#11141a] border border-slate-800 rounded-xl overflow-hidden flex flex-col justify-between hover:border-slate-700 transition">
-                <div class="h-56 bg-cover bg-center" style="background-image: url('https://unsplash.com');"></div>
+                <div class="h-56 w-full relative">
+                    <img src="https://unsplash.com" class="w-full h-full object-cover" alt="Heliskiing Helicopter">
+                </div>
                 <div class="p-6 space-y-4 flex-grow flex flex-col justify-between">
                     <div>
                         <h3 class="text-lg font-bold text-white uppercase tracking-tight">Heliskiing Ridge Circuit</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed mt-1">Absolute wilderness isolation. Board a high-performance aircraft vector to unlock pristine mountain access.</p>
+                        <p class="text-xs text-slate-400 leading-relaxed mt-1 mb-4">Absolute wilderness isolation. Board a high-performance aircraft vector to unlock pristine mountain access.</p>
+                        
+                        <!-- Bullet Points Block -->
+                        <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800/80 pt-4">
+                            <li class="flex items-center"><span class="text-amber-500 mr-2">✓</span> Three high-altitude helicopter drops</li>
+                            <li class="flex items-center"><span class="text-amber-500 mr-2">✓</span> Professional action camera video footage</li>
+                            <li class="flex items-center"><span class="text-amber-500 mr-2">✓</span> Exclusive premium chalet lunch included</li>
+                        </ul>
                     </div>
                     <div class="pt-4 border-t border-slate-800/60 flex justify-between items-baseline">
                         <span class="text-[10px] uppercase font-bold text-slate-500 tracking-wider">Base Package</span>
@@ -74,13 +95,22 @@
                 </div>
             </div>
 
-            <!-- Product Item Three: CLOSE UP SNOWBOARD CARVING -->
+            <!-- Product Item Three: CLOSE UP SKIING CARVE -->
             <div class="bg-[#11141a] border border-slate-800 rounded-xl overflow-hidden flex flex-col justify-between hover:border-slate-700 transition">
-                <div class="h-56 bg-cover bg-center" style="background-image: url('https://unsplash.com');"></div>
+                <div class="h-56 w-full relative">
+                    <img src="https://unsplash.com" class="w-full h-full object-cover" alt="Carving Close Up">
+                </div>
                 <div class="p-6 space-y-4 flex-grow flex flex-col justify-between">
                     <div>
                         <h3 class="text-lg font-bold text-white uppercase tracking-tight">Carving Mastery Core</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed mt-1">Accelerate biomechanical control. Refine technical lines under highly focused field supervisor coaching data.</p>
+                        <p class="text-xs text-slate-400 leading-relaxed mt-1 mb-4">Accelerate biomechanical control. Refine technical lines under highly focused field supervisor coaching data.</p>
+                        
+                        <!-- Bullet Points Block -->
+                        <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800/80 pt-4">
+                            <li class="flex items-center"><span class="text-amber-500 mr-2">✓</span> Video analysis of your posture & lines</li>
+                            <li class="flex items-center"><span class="text-amber-500 mr-2">✓</span> High-speed carving simulation drills</li>
+                            <li class="flex items-center"><span class="text-amber-500 mr-2">✓</span> Personal performance progression map</li>
+                        </ul>
                     </div>
                     <div class="pt-4 border-t border-slate-800/60 flex justify-between items-baseline">
                         <span class="text-[10px] uppercase font-bold text-slate-500 tracking-wider">Base Package</span>
@@ -229,4 +259,3 @@
     </script>
 </body>
 </html>
-    
